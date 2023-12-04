@@ -35,7 +35,23 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;7yuHJQ g
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* set ul box-sizing to box */
+ul {
+  all: unset;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+  box-sizing: inherit;
 }
 
 body {
@@ -54,7 +70,6 @@ body {
   font-weight: 500;
   font-size: 15px;
 }
-
 .header__top {
   background-color: #EFEFEF;
   display: flex;
@@ -63,67 +78,54 @@ body {
   align-items: center;
   gap: 16px;
 }
-
 .header__top-city {
   font-size: 14px;
-  padding-right: 32px;
+  margin-right: 32px;
 }
-
 .header__top-phone {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   font-weight: 600;
   font-size: 16px;
 }
-
 .header__top-link {
   display: flex;
   gap: 8px;
 }
-
 .header__top-request {
   display: flex;
   width: 368px;
   height: 40px;
   gap: 8px;
 }
-
 .header__top-request-offer {
   border-radius: 5px;
   border: 2px solid #FD0;
-  background-color: rgba(10, 163, 96, 0.00);
-
-
+  background-color: rgba(10, 163, 96, 0);
 }
 .header__top-request-callback {
   border-radius: 5px;
   background: #63B32E;
 }
-
-
-.header__menu-items {
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   border: 1px solid #D8D8D8;
   background-color: #FFF;
 }
-
 .header__menu-items {
   display: flex;
-  justify-content: flex-start;
-  gap: 80px;
+  justify-content: space-around;
   align-items: center;
-  list-style: none;
+  width: 100%;
 }
-
 .header__menu-item {
   color: #041726;
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; 
-}
-
-
-///*# sourceMappingURL=styles.css.map */
+  line-height: 150%;
+}/*# sourceMappingURL=main.css.map */
