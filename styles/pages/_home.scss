@@ -1,18 +1,18 @@
- html {
+html {
   box-sizing: border-box;
 }
- 
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
  * making all elements inheriting from the root box-sizing value
  * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
- *,
- *::before,
- *::after {
-   box-sizing: inherit;
- }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 /* Set core root defaults */
 html {
@@ -39,8 +39,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -51,49 +51,44 @@ ul {
   padding: 0;
   text-indent: 0;
   list-style-type: none;
-  box-sizing: inherit
+  box-sizing: inherit;
 }
 
 body {
   background-color: green;
   height: 100%;
   width: 100%;
- }
+}
 
-
-.container { 
-  width: 1180px; 
+.container {
+  width: 1180px;
   margin: 0 auto;
 }
 
-
 .header {
-    font-family: 'Montserrat', 'Arial';
-    font-weight: 500;
-    font-size: 15px;
-
+  font-family: "Montserrat", "Arial";
+  font-weight: 500;
+  font-size: 15px;
 
   &__top {
-    background-color: #EFEFEF;
+    background-color: #efefef;
     display: flex;
     height: 85px;
     justify-content: center;
     align-items: center;
     gap: 16px;
 
-    
     &-city {
       font-size: 14px;
       margin-right: 32px;
     }
 
     &-phone {
-      display: flex;  
+      display: flex;
       align-items: center;
       gap: 6px;
       font-weight: 600;
       font-size: 16px;
-
     }
 
     &-link {
@@ -102,25 +97,22 @@ body {
     }
 
     &-request {
-      display: flex; 
+      display: flex;
       width: 368px;
       height: 40px;
       gap: 8px;
 
       &-offer {
         border-radius: 5px;
-        border: 2px solid #FD0;
-        background-color: rgba(10, 163, 96, 0.00);
-
+        border: 2px solid #fd0;
+        background-color: rgba(10, 163, 96, 0);
       }
 
       &-callback {
         border-radius: 5px;
-        background: #63B32E;
+        background: #63b32e;
       }
-
     }
-    
   }
 
   &__menu {
@@ -129,13 +121,12 @@ body {
     align-items: center;
 
     height: 50px;
-    border: 1px solid #D8D8D8;
-    background-color: #FFF;
-
+    border: 1px solid #d8d8d8;
+    background-color: #fff;
 
     &-items {
       display: flex;
-      justify-content:space-around; 
+      justify-content: space-around;
       align-items: center;
       width: 100%;
     }
@@ -145,15 +136,48 @@ body {
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
-      line-height: 150%; 
+      line-height: 150%;
+    }
+  }
+}
+
+.intro {
+  height: 600px;
+
+  &__advertisment {
+    display: flex;
+  }
+
+  &__ad-book {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__ad-book-title {
+    width: 509px;
+  }
+
+  &__ad-book-subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // component
+    .delimiter {
+      height: 1px;
+      width: 48px;
+      background-color: #041726;
     }
   }
 
-  
+  &__ad-picture {
+    display: flex;
+    width: 500px;
+  }
 
-  
-
-  
-
+  &__image {
+    max-width: 500px;
+  }
 }
 
+//

@@ -71,7 +71,7 @@ body {
   font-size: 15px;
 }
 .header__top {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   display: flex;
   height: 85px;
   justify-content: center;
@@ -101,20 +101,20 @@ body {
 }
 .header__top-request-offer {
   border-radius: 5px;
-  border: 2px solid #FD0;
+  border: 2px solid #fd0;
   background-color: rgba(10, 163, 96, 0);
 }
 .header__top-request-callback {
   border-radius: 5px;
-  background: #63B32E;
+  background: #63b32e;
 }
 .header__menu {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
-  border: 1px solid #D8D8D8;
-  background-color: #FFF;
+  border: 1px solid #d8d8d8;
+  background-color: #fff;
 }
 .header__menu-items {
   display: flex;
@@ -128,4 +128,35 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+}
+
+.intro {
+  height: 600px;
+}
+.intro__advertisment {
+  display: flex;
+}
+.intro__ad-book {
+  display: flex;
+  flex-direction: column;
+}
+.intro__ad-book-title {
+  width: 509px;
+}
+.intro__ad-book-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro__ad-book-subtitle .delimiter {
+  height: 1px;
+  width: 48px;
+  background-color: #041726;
+}
+.intro__ad-picture {
+  display: flex;
+  width: 500px;
+}
+.intro__image {
+  max-width: 500px;
 }/*# sourceMappingURL=main.css.map */
