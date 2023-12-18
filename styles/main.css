@@ -1,3 +1,28 @@
+.button {
+  display: flex;
+  width: 240px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.button-green {
+  display: flex;
+  border-radius: 5px;
+  background: #63B32E;
+  color: #FFF;
+}
+.button-white {
+  border-radius: 5px;
+  border: 2px solid #FD0;
+  background: rgba(10, 163, 96, 0);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -55,7 +80,7 @@ ul {
 }
 
 body {
-  background-color: green;
+  background-color: #EFEFEF;
   height: 100%;
   width: 100%;
 }
@@ -109,6 +134,9 @@ body {
   background: #63b32e;
 }
 .header__menu {
+  background-color: #fff;
+}
+.header__menu-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +146,7 @@ body {
 }
 .header__menu-items {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
@@ -132,13 +160,16 @@ body {
 
 .intro {
   height: 600px;
+  background: #FFF;
 }
 .intro__advertisment {
   display: flex;
+  align-items: center;
 }
 .intro__ad-book {
   display: flex;
   flex-direction: column;
+  gap: 100px;
 }
 .intro__ad-book-title {
   width: 509px;
@@ -153,10 +184,15 @@ body {
   width: 48px;
   background-color: #041726;
 }
+.intro__ad-book-process {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
 .intro__ad-picture {
   display: flex;
-  width: 500px;
+  overflow: hidden;
 }
 .intro__image {
-  max-width: 500px;
+  width: 100px;
 }/*# sourceMappingURL=main.css.map */
