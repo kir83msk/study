@@ -1,0 +1,28 @@
+.button {
+    display: flex;
+    width: 240px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+
+    &-green {
+        display: flex;
+        border-radius: 5px;
+        background: #63B32E;
+
+        color: #FFF;
+      }
+
+    &-white {
+        border-radius: 5px;
+        border: 2px solid #FD0;
+        background: rgba(10, 163, 96, 0.00);
+    }
+}

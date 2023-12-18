@@ -55,7 +55,7 @@ ul {
 }
 
 body {
-  background-color: green;
+  background-color: #EFEFEF;
   height: 100%;
   width: 100%;
 }
@@ -116,17 +116,22 @@ body {
   }
 
   &__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 50px;
-    border: 1px solid #d8d8d8;
     background-color: #fff;
+
+    &-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 50px;
+      border: 1px solid #d8d8d8;
+      background-color: #fff;
+    }
+    
 
     &-items {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       width: 100%;
     }
@@ -143,14 +148,17 @@ body {
 
 .intro {
   height: 600px;
+  background: #FFF;
 
   &__advertisment {
     display: flex;
+    align-items: center;
   }
 
   &__ad-book {
     display: flex;
     flex-direction: column;
+    gap: 100px;
   }
 
   &__ad-book-title {
@@ -170,14 +178,18 @@ body {
     }
   }
 
+  &__ad-book-process {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
   &__ad-picture {
     display: flex;
-    width: 500px;
+    overflow: hidden;
   }
 
   &__image {
-    max-width: 500px;
+    width: 100px;
   }
 }
-
-//
