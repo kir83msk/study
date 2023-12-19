@@ -1,0 +1,25 @@
+$text-font-stack: 'Montserrat', 'Arial', sans-serif !default;
+$text-color: #041726 !default;
+
+
+body {
+  color: $text-color;
+  font: normal 125% / 1.4 $text-font-stack;
+}
+
+h1, .h1 {
+  font-family: $text-font-stack;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+  color: $text-color;
+}
+
+p, .p {
+  color: #041726;
+  font-family: $text-font-stack;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
