@@ -12,7 +12,13 @@
     font-weight: 600;
     line-height: 150%;
 
-    &-green {
+    &_size-large {
+        width: 591px;
+        height: 50px;
+
+    }
+
+    &_green {
         display: flex;
         border-radius: 5px;
         background: #63B32E;
@@ -20,9 +26,11 @@
         color: #FFF;
       }
 
-    &-white {
+    &_white {
         border-radius: 5px;
         border: 2px solid #FD0;
         background: rgba(10, 163, 96, 0.00);
     }
+
+    
 }
