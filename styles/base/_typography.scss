@@ -8,12 +8,24 @@ body {
 }
 
 h1, .h1 {
-  font-family: $text-font-stack;
-  font-size: 40px;
-  line-height: 48px;
-  font-weight: bold;
-  color: $text-color;
-}
+    font-family: $text-font-stack;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: bold;
+    color: $text-color;
+  }
+ 
+  h2, .h2 {
+    font-family: $text-font-stack;
+    color: #041726;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }  
+
+
 
 p, .p {
   color: #041726;
